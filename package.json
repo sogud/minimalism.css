@@ -1,0 +1,56 @@
+{
+  "name": "minimalism.css",
+  "version": "1.0.1",
+  "description": "A Minimalism Design CSS framework for web.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "run-p serve open:dev watch:stylus watch:pug watch:examples-stylus-to-docs",
+    "serve": "http-server -p 9090 docs/",
+    "open:dev": "opener http://localhost:9090",
+    "watch:stylus": "stylus -w src/minimalism.styl -o docs/minimalism.css",
+    "watch:pug": "watch 'npm run build:pug' examples/",
+    "watch:examples-stylus-to-docs": "stylus -w examples/assets/css/*.styl -o docs/assets/css/",
+    "build": "run-s clean build:stylus build:stylus-min postcss build:pug",
+    "clean": "rimraf dist/css/*",
+    "build:stylus": "stylus src/minimalism.styl -o dist/minimalism.css",
+    "build:stylus-min": "stylus --compress src/minimalism.styl -o dist/minimalism.min.css",
+    "postcss": "postcss -r dist/*.css --map",
+    "build:pug": "pug examples/index.pug -o docs/",
+    "livereload": "live-reload --port 9091 docs/",
+    "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
+    "commit": "git-cz",
+    "release": "standard-version"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "keywords": [],
+  "author": "shunshun",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^7.1.6",
+    "canvas": "^2.6.1",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "http-server": "^0.12.0",
+    "jstransformer-markdown-it": "^2.1.0",
+    "nib": "^1.1.2",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.3",
+    "postcss-header": "^1.0.0",
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6",
+    "stylus": "^0.54.7",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "commitlint-config-cz": "^0.12.1",
+    "cz-customizable": "^6.2.0",
+    "standard-version": "^7.0.1"
+  }
+}

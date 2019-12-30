@@ -1,0 +1,19 @@
+// Below is a list of the Sass rules that could not be converted to Stylus
+// percentage: line 47 in your Sass file
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+// clearfix
+clearfix() {
+  &::before, &::after {
+    content: ' '
+    // 1
+    display: table
+    // 2
+  }
+
+  &::after {
+    clear: both
+  }
+}

@@ -1,0 +1,157 @@
+// --------------------------------------------------
+// Buttons
+// --------------------------------------------------
+states = {
+  default: $color-default,
+  primary: $color-primary,
+  info: $color-info,
+  success: $color-success,
+  danger: $color-danger,
+  warning: $color-warning,
+  inverted: $color-inverted
+}
+
+.btn {
+  display: inline-block
+  padding: $btn-padding
+  text-align: center
+  vertical-align: middle
+  line-height: $btn-line-height
+  font-size: $btn-font-size
+  border: $btn-border-width solid transparent
+  border-radius: $btn-border-radius
+  cursor: pointer
+  outline: none
+
+  for state, val in states {
+    &.{state} {
+      color: #fff
+      background-color: val
+
+      &:hover {
+        background-color: darken(val, 10%)
+      }
+
+      &:focus {
+        background-color: darken(val, 10%)
+      }
+
+      &:active {
+        background-color: darken(val, 10%)
+      }
+    }
+  }
+
+  &.link {
+    color: $color-primary
+    background-color: transparent
+    border-color: transparent
+
+    &:hover {
+      color: darken($color-primary, 10%)
+      text-decoration: underline
+      background-color: transparent
+    }
+
+    &:focus {
+      color: darken($color-primary, 10%)
+      text-decoration: underline
+      background-color: transparent
+    }
+
+    &:active {
+      color: darken($color-primary, 10%)
+      text-decoration: underline
+      background-color: transparent
+    }
+  }
+}
+
+// }
+
+// outline button
+.btn.outline {
+  background-color: transparent
+
+  for state, val in states {
+    &.{state} {
+      color: val
+      border-color: val
+
+      &:hover {
+        color: #fff
+        background-color: val
+      }
+
+      &:focus {
+        color: #fff
+        background-color: val
+      }
+
+      &:active {
+        color: #fff
+        background-color: val
+      }
+    }
+  }
+}
+
+// fluid button
+.btn.fluid {
+  display: block
+  width: 100%
+}
+
+// pill button
+.btn.pill {
+  border-radius: 16px
+}
+
+// button group
+.btns {
+  position: relative
+  display: inline-block
+  vertical-align: middle
+
+  > .btn {
+    position: relative
+    float: left
+    border-radius: 0
+    margin-left: -1 * $btn-border-width
+
+    &:first-child {
+      margin-left: 0
+      border-top-left-radius: $btn-border-radius
+      border-bottom-left-radius: $btn-border-radius
+    }
+
+    &:last-child {
+      border-top-right-radius: $btn-border-radius
+      border-bottom-right-radius: $btn-border-radius
+    }
+  }
+
+  &.vertical {
+    > .btn {
+      position: relative
+      display: block
+      float: none
+      border-radius: 0
+      width: 100%
+      max-width: 100%
+      margin-left: 0
+      margin-top: -1 * $btn-border-width
+
+      &:first-child {
+        margin-top: 0
+        border-top-left-radius: $btn-border-radius
+        border-top-right-radius: $btn-border-radius
+      }
+
+      &:last-child {
+        border-bottom-left-radius: $btn-border-radius
+        border-bottom-right-radius: $btn-border-radius
+      }
+    }
+  }
+}
