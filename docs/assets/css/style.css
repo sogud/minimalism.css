@@ -1,0 +1,32 @@
+.prettyprint {
+  border: 0px !important;
+  padding: 12px !important;
+}
+body .header {
+  height: 50px;
+  width: 100%;
+  display: block;
+  background: #d3dce6;
+}
+body .content {
+  margin: 0 auto;
+  width: 900px;
+  height: 100%;
+}
+.row {
+  margin: 12px;
+  overflow: hidden;
+}
+.row [class*='col-'],
+.row [class*='col-sm-'] {
+  border-radius: 4px;
+  height: 36px;
+}
+.row [class*='col-']:nth-child(even),
+.row [class*='col-sm-']:nth-child(even) {
+  background: #d3dce6;
+}
+.row [class*='col-']:nth-child(odd),
+.row [class*='col-sm-']:nth-child(odd) {
+  background: #e0e7ee;
+}

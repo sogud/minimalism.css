@@ -1,0 +1,59 @@
+- let arr
+.grids
+  .row
+    .col-24
+  pre.prettyprint
+    :markdown-it(linkify langPrefix='highlight-')
+      ```html
+      <div class="row">
+        <div class="col-24"></div>
+      </div>
+      ```
+  - arr = new Array(2)
+  .row
+    each val in arr
+      .col-12
+
+  pre.prettyprint
+    :markdown-it(linkify langPrefix='highlight-')
+      ```html
+      <div class="row">
+        <div class="col-12"></div>
+        <div class="col-12"></div>
+      </div>
+      ```
+
+  - arr = new Array(3)
+  .row
+    each val in arr
+      .col-8
+
+  - arr = new Array(4)
+  .row
+    each val in arr
+      .col-6
+
+  - arr = new Array(6)
+  .row
+    each val in arr
+      .col-4
+
+  - arr = new Array(8)
+  .row
+    each val in arr
+      .col-3
+
+  - arr = new Array(12)
+  .row
+    each val in arr
+      .col-2
+
+  - arr = new Array(24)
+  .row
+    each val in arr
+      .col-1
+
+  - arr = new Array(6)
+  .row
+    each val in arr
+      .col-md-4.col-sm-8.col-12

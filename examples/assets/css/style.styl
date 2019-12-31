@@ -1,0 +1,38 @@
+.prettyprint {
+  border: 0px !important
+  padding: 12px !important
+}
+
+body {
+  // text-align: center
+  .header {
+    height: 50px
+    width: 100%
+    display: block
+    background: #d3dce6
+  }
+
+  .content {
+    margin: 0 auto
+    width: 900px
+    height: 100%
+  }
+}
+
+.row {
+  margin: 12px
+  overflow: hidden
+
+  [class*='col-'], [class*='col-sm-'] {
+    border-radius: 4px
+    height: 36px
+
+    &:nth-child(even) {
+      background: #d3dce6
+    }
+
+    &:nth-child(odd) {
+      background: lighten(#d3dce6, 30%)
+    }
+  }
+}
