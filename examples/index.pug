@@ -10,7 +10,7 @@ html
       title= page_title
 
     block stylesheets
-    
+
       //- 这里是模板自定义样式  
       link(rel="stylesheet" href="./assets/css/style.css")
       //- 这里是minimalism.css样式
@@ -18,4 +18,9 @@ html
       script(src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js")
   body
 
-    include layout.pug
+    include layout/header.pug
+
+    include layout/content.pug
+
+    include layout/footer.pug
+

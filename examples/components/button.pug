@@ -1,0 +1,53 @@
+-var states = ['default', 'primary', 'info', 'success', 'danger','warning','inverted']
+.buttons
+  .row
+    each val in states
+      button.btn(class=val) button 
+
+  pre.prettyprint
+    :markdown-it(linkify langPrefix='highlight-')
+      ```html
+      <div class="row">
+        <button class="btn default">button </button>
+        <button class="btn primary">button </button>
+        <button class="btn info">button </button>
+        <button class="btn success">button </button>
+        <button class="btn danger">button </button>
+        <button class="btn warning">button </button>
+        <button class="btn inverted">button </button>
+      </div>
+      ```
+  .row    
+    each val in states
+      button.btn.outline(class=val) button 
+
+  pre.prettyprint
+    :markdown-it(linkify langPrefix='highlight-')
+      ```html
+      <div class="row">
+        <button class="btn outline default">button </button>
+        <button class="btn outline primary">button </button>
+        <button class="btn outline info">button </button>
+        <button class="btn outline success">button </button>
+        <button class="btn outline danger">button </button>
+        <button class="btn outline warning">button </button>
+        <button class="btn outline inverted">button </button>
+      </div>
+      ```
+  .row      
+    each val in states
+      button.btn.pill(class=val) button 
+
+  pre.prettyprint
+    :markdown-it(linkify langPrefix='highlight-')
+      ```html
+      <div class="row">
+        <button class="btn pill default">button </button>
+        <button class="btn pill primary">button </button>
+        <button class="btn pill info">button </button>
+        <button class="btn pill success">button </button>
+        <button class="btn pill danger">button </button>
+        <button class="btn pill warning">button </button>
+        <button class="btn pill inverted">button </button>
+      </div>
+      ```

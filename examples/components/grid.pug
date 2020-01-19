@@ -27,6 +27,15 @@
   .row
     each val in arr
       .col-8
+  pre.prettyprint
+    :markdown-it(linkify langPrefix='highlight-')
+      ```html
+      <div class="row">
+        <div class="col-8"></div>
+        <div class="col-8"></div>
+        <div class="col-8"></div>
+      </div>
+      ```
 
   - arr = new Array(4)
   .row
