@@ -1,0 +1,128 @@
+input[type='file'] {
+  display: block
+}
+
+textarea {
+  resize: vertical
+}
+
+label {
+  display: inline-block
+  margin-bottom: 5px
+}
+
+.form-control {
+  display: block
+  width: 100%
+  padding: 4px 8px
+  border: $input-border-width solid $input-border-color
+  border-radius: $input-border-radius
+  background-color: $input-bg-color
+  background-clip: padding-box
+  font-size: $input-font-size
+  line-height: $input-line-height
+  color: $input-text-color
+
+  &:focus {
+    border-color: $input-border-color-focus
+    outline: 0
+  }
+
+  &[disabled] {
+    cursor: not-allowed
+  }
+
+  &:disabled, &[readonly] {
+    background-color: #e9ecef
+    opacity: 1
+  }
+}
+
+.form-label {
+  padding-top: 5px
+  padding-bottom: 5px
+  margin-bottom: 0
+}
+
+// label+input
+.form-group {
+  margin-bottom: 15px
+}
+
+.form-inline {
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+
+  input[type='file'], .form-group {
+    display: flex
+    flex: 0 0 auto
+    flex-flow: row wrap
+    align-items: center
+  }
+
+  .form-control {
+    display: inline-block
+    width: auto
+    vertical-align: middle
+  }
+}
+
+// checkbox & radio
+.checkbox, .radio {
+  position: relative
+  display: block
+  margin-top: 10px
+  margin-bottom: 10px
+  padding-left: 20px
+
+  label {
+    position: relative
+    display: inline-block
+    min-height: 20px
+    margin-bottom: 0
+    font-weight: 400
+    cursor: pointer
+  }
+
+  &.disabled label {
+    cursor: not-allowed
+  }
+
+  &.inline {
+    display: inline-block
+    margin-top: 0
+    margin-bottom: 0
+    vertical-align: middle
+    font-weight: 400
+  }
+}
+
+.checkbox + .checkbox, .radio + .radio {
+  margin-top: -5px
+}
+
+.checkbox.inline + .checkbox.inline, .radio.inline + .radio.inline {
+  margin-top: 0
+  margin-left: 10px
+}
+
+.checkbox input[type='checkbox'], .radio input[type='radio'] {
+  position: absolute
+  margin-top: 4px
+  margin-left: -20px
+}
+
+// fieldset disabled
+fieldset[disabled] {
+  .form-control, .checkbox label, .radio label {
+    cursor: not-allowed
+  }
+}
+
+.help-block {
+  display: block
+  margin-top: 5px
+  margin-bottom: 10px
+  color: #737373
+}
