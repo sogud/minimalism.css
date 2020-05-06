@@ -1,0 +1,85 @@
+table {
+  background: transparent
+  border-spacing: 0
+  border-collapse: collapse
+}
+
+.table {
+  width: 100%
+  max-width: 100%
+  margin-bottom: 15px
+  text-align: left
+  line-height: $line-height-base
+
+  th {
+    padding: 12px 8px
+  }
+
+  td {
+    padding: 8px
+  }
+
+  > thead {
+    background-color: $table-head-bg-color
+
+    > tr {
+      > th, > td {
+        border-bottom: 1px solid $table-border-color
+      }
+    }
+  }
+
+  > tbody {
+    > tr + tr {
+      > th, > td {
+        border-top: 1px solid $table-border-color
+      }
+    }
+  }
+
+  > tfoot {
+    background-color: $table-head-bg-color
+
+    > tr {
+      > th, > td {
+        border-top: 1px solid $table-border-color
+      }
+    }
+  }
+
+  &.rounded {
+    max-width: none // fix border-collapse issue
+    border-collapse: separate
+    border-radius: $table-border-radius
+  }
+
+  &.bordered {
+    border: $table-border-width solid $table-border-color
+
+    > thead, > tbody, > tfoot {
+      > tr {
+        > th + th, > td + td {
+          border-left: 1px solid $table-border-color
+        }
+      }
+    }
+  }
+
+  &.striped {
+    > tbody > tr:nth-of-type(2n+2) {
+      background-color: $table-striped-bg-color
+    }
+  }
+
+  &.hover {
+    > tbody > tr:hover {
+      background-color: $table-hover-bg-color
+    }
+  }
+}
+
+.table-overflow {
+  min-height: 0.01%
+  overflow-x: auto
+  -webkit-overflow-scrolling: touch
+}
