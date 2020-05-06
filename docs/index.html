@@ -1,4 +1,13 @@
-<!doctype html><html><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>nimimalism.css</title><title></title><link rel="stylesheet" href="./assets/css/style.css"/><link rel="stylesheet" href="./minimalism.css"/><script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script></head><body><div class="header">minimalism.css</div><div class="content"><div class="buttons"><div class="row"><button class="btn default">button </button><button class="btn primary">button </button><button class="btn info">button </button><button class="btn success">button </button><button class="btn danger">button </button><button class="btn warning">button </button><button class="btn inverted">button </button></div><pre class="prettyprint"><pre><code class="highlight-html">&lt;div class=&quot;row&quot;&gt;
+<!doctype html><html><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>nimimalism.css</title><title></title><link rel="stylesheet" href="./assets/css/style.css"/><link rel="stylesheet" href="./minimalism.css"/><script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script></head><body><div class="header"><h1>minimalism.css</h1><div class="row"> <div class="col-4"> <a href="#typography">typography</a></div><div class="col-4"> <a href="#buttons">buttons</a></div><div class="col-4"> <a href="#grid">grid</a></div><div class="col-4"> <a href="#forms">forms</a></div><div class="col-4"> <a href="#tables">tables</a></div><div class="col-4"> <a href="#boxes">boxes</a></div></div></div><div class="content"><div class="container typography" id="typography"><div></div><h1>h1 Example Heading <small>subtitle</small></h1><h2>h2 Example Heading <small>subtitle</small></h2><h3>h3 Example Heading <small>subtitle</small></h3><h4>h4 Example Heading <small>subtitle</small></h4><h5>h5 Example Heading <small>subtitle</small></h5><h6>h6 Example Heading <small>subtitle</small></h6><pre class="prettyprint"><pre><code class="highlight-html">&lt;div&gt;
+  &lt;h1&gt;h1 Example Heading &lt;small&gt;subtitle&lt;/small&gt;&lt;/h1&gt;
+  &lt;h2&gt;h2 Example Heading &lt;small&gt;subtitle&lt;/small&gt;&lt;/h2&gt;
+  &lt;h3&gt;h3 Example Heading &lt;small&gt;subtitle&lt;/small&gt;&lt;/h3&gt;
+  &lt;h4&gt;h4 Example Heading &lt;small&gt;subtitle&lt;/small&gt;&lt;/h4&gt;
+  &lt;h5&gt;h5 Example Heading &lt;small&gt;subtitle&lt;/small&gt;&lt;/h5&gt;
+  &lt;h6&gt;h6 Example Heading &lt;small&gt;subtitle&lt;/small&gt;&lt;/h6&gt;
+&lt;/div&gt;
+</code></pre>
+</pre></div><div class="container buttons" id="buttons"><div class="row"><button class="btn default">button </button><button class="btn primary">button </button><button class="btn info">button </button><button class="btn success">button </button><button class="btn danger">button </button><button class="btn warning">button </button><button class="btn inverted">button </button></div><pre class="prettyprint"><pre><code class="highlight-html">&lt;div class=&quot;row&quot;&gt;
   &lt;button class=&quot;btn default&quot;&gt;button &lt;/button&gt;
   &lt;button class=&quot;btn primary&quot;&gt;button &lt;/button&gt;
   &lt;button class=&quot;btn info&quot;&gt;button &lt;/button&gt;
@@ -28,19 +37,227 @@
   &lt;button class=&quot;btn pill inverted&quot;&gt;button &lt;/button&gt;
 &lt;/div&gt;
 </code></pre>
-</pre></div><div class="grids"><div class="row"><div class="col-24"></div></div><pre class="prettyprint"><pre><code class="highlight-html">&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-24&quot;&gt;&lt;/div&gt;
+</pre><div class="row"><div class="btns vertical"><button class="btn pill default">button </button><button class="btn pill primary">button </button><button class="btn pill info">button </button><button class="btn pill success">button </button><button class="btn pill danger">button </button><button class="btn pill warning">button </button><button class="btn pill inverted">button </button></div></div><pre class="prettyprint"><pre><code class="highlight-html">&lt;div class=&quot;btns vertical&quot;&gt;
+  &lt;button class=&quot;btn pill default&quot;&gt;button &lt;/button&gt;
+  &lt;button class=&quot;btn pill primary&quot;&gt;button &lt;/button&gt;
+  &lt;button class=&quot;btn pill info&quot;&gt;button &lt;/button&gt;
+  &lt;button class=&quot;btn pill success&quot;&gt;button &lt;/button&gt;
+  &lt;button class=&quot;btn pill danger&quot;&gt;button &lt;/button&gt;
+  &lt;button class=&quot;btn pill warning&quot;&gt;button &lt;/button&gt;
+  &lt;button class=&quot;btn pill inverted&quot;&gt;button &lt;/button&gt;
 &lt;/div&gt;
 </code></pre>
-</pre><div class="row"><div class="col-12"></div><div class="col-12"></div></div><pre class="prettyprint"><pre><code class="highlight-html">&lt;div class=&quot;row&quot;&gt;
+</pre></div><div class="container grids" id="grid"><div class="row"><div class="grid_block col-12"></div><div class="grid_block col-12"></div></div><pre class="prettyprint"><pre><code class="highlight-html">&lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-12&quot;&gt;&lt;/div&gt;
   &lt;div class=&quot;col-12&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-</pre><div class="row"><div class="col-8"></div><div class="col-8"></div><div class="col-8"></div></div><pre class="prettyprint"><pre><code class="highlight-html">&lt;div class=&quot;row&quot;&gt;
+</pre><div class="row"><div class="grid_block col-8"></div><div class="grid_block col-8"></div><div class="grid_block col-8"></div></div><pre class="prettyprint"><pre><code class="highlight-html">&lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-8&quot;&gt;&lt;/div&gt;
   &lt;div class=&quot;col-8&quot;&gt;&lt;/div&gt;
   &lt;div class=&quot;col-8&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-</pre><div class="row"><div class="col-6"></div><div class="col-6"></div><div class="col-6"></div><div class="col-6"></div></div><div class="row"><div class="col-4"></div><div class="col-4"></div><div class="col-4"></div><div class="col-4"></div><div class="col-4"></div><div class="col-4"></div></div><div class="row"><div class="col-3"></div><div class="col-3"></div><div class="col-3"></div><div class="col-3"></div><div class="col-3"></div><div class="col-3"></div><div class="col-3"></div><div class="col-3"></div></div><div class="row"><div class="col-2"></div><div class="col-2"></div><div class="col-2"></div><div class="col-2"></div><div class="col-2"></div><div class="col-2"></div><div class="col-2"></div><div class="col-2"></div><div class="col-2"></div><div class="col-2"></div><div class="col-2"></div><div class="col-2"></div></div><div class="row"><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div></div><div class="row"><div class="col-md-4 col-sm-8 col-12"></div><div class="col-md-4 col-sm-8 col-12"></div><div class="col-md-4 col-sm-8 col-12"></div><div class="col-md-4 col-sm-8 col-12"></div><div class="col-md-4 col-sm-8 col-12"></div><div class="col-md-4 col-sm-8 col-12"></div></div></div></div><div class="footer">This is FOOTER</div></body></html>
+</pre><div class="row"><div class="grid_block col-3"></div><div class="grid_block col-3"></div><div class="grid_block col-3"></div><div class="grid_block col-3"></div><div class="grid_block col-3"></div><div class="grid_block col-3"></div><div class="grid_block col-3"></div><div class="grid_block col-3"></div></div><pre class="prettyprint"><pre><code class="highlight-html">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-3&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-3&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-3&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-3&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-3&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-3&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-3&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-3&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</pre></div><div class="container forms" id="forms"><div><form class="form-horizontal" action=""><div class="form-group row"><label class="col-4 form-label" for="">Normal Input</label><div class="col-20"><input class="form-control" type="text"/></div></div><div class="form-group row"><label class="col-4 form-label" for="">Help Text</label><div class="col-20"><input class="form-control" type="text"/><span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span></div></div><div class="form-group row"><label class="col-4 form-label" for="">Placeholder</label><div class="col-20"><input class="form-control" type="text" placeholder="placeholder"/></div></div><div class="form-group row"><label class="col-4 form-label" for="">Disabled Input</label><div class="col-20"><input class="form-control" type="text" disabled="disabled"/></div></div><div class="form-group row"><label class="col-4 form-label" for="">Textarea</label><div class="col-20"><textarea class="form-control" name="" id="" rows="3"></textarea></div></div></form></div><pre class="prettyprint"><pre><code class="highlight-html">  &lt;div class=&quot;example&quot;&gt;
+    &lt;form action=&quot;&quot; class=&quot;form-horizontal&quot;&gt;
+      &lt;div class=&quot;form-group row&quot;&gt;
+        &lt;label for=&quot;&quot; class=&quot;col-4 form-label&quot;&gt;Normal Input&lt;/label&gt;
+        &lt;div class=&quot;col-20&quot;&gt;
+          &lt;input class=&quot;form-control&quot; type=&quot;text&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;form-group row&quot;&gt;
+        &lt;label for=&quot;&quot; class=&quot;col-4 form-label&quot;&gt;Help Text&lt;/label&gt;
+        &lt;div class=&quot;col-20&quot;&gt;
+          &lt;input class=&quot;form-control&quot; type=&quot;text&quot;&gt;
+          &lt;span class=&quot;help-block&quot;&gt;A block of help text that breaks onto a new line and may extend beyond one line.
+          &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;form-group row&quot;&gt;
+        &lt;label for=&quot;&quot; class=&quot;col-4 form-label&quot;&gt;Placeholder&lt;/label&gt;
+        &lt;div class=&quot;col-20&quot;&gt;
+          &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;placeholder&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;form-group row&quot;&gt;
+        &lt;label for=&quot;&quot; class=&quot;col-4 form-label&quot;&gt;Disabled Input&lt;/label&gt;
+        &lt;div class=&quot;col-20&quot;&gt;
+          &lt;input class=&quot;form-control&quot; type=&quot;text&quot; disabled=&quot;disabled&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;form-group row&quot;&gt;
+        &lt;label for=&quot;&quot; class=&quot;col-4 form-label&quot;&gt;Textarea&lt;/label&gt;
+        &lt;div class=&quot;col-20&quot;&gt;
+          &lt;textarea class=&quot;form-control&quot; name=&quot;&quot; id=&quot;&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+</code></pre>
+</pre></div><div class="container tables" id="tables"><div><div class="table-overflow"><table class="table hover"><thead><tr><th>Name</th><th>Registration Date</th><th>E-mail address</th><th>Premium Plan</th></tr></thead><tbody><tr><td>Nicky Almera</td><td>September 14, 2013</td><td>nicky@hotmail.com</td><td>No</td></tr><tr><td>Edmund Wong</td><td>January 11, 2014</td><td>edmund@yahoo.com</td><td>Yes</td></tr><tr><td>Harvinder Singh</td><td>May 11, 2014</td><td>harvinder@gmail.com</td><td>Yes</td></tr></tbody></table></div></div><pre class="prettyprint"><pre><code class="highlight-html">  &lt;div class=&quot;example&quot;&gt;
+    &lt;div class=&quot;table-overflow&quot;&gt;
+      &lt;table class=&quot;table hover&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Registration Date&lt;/th&gt;
+            &lt;th&gt;E-mail address&lt;/th&gt;
+            &lt;th&gt;Premium Plan&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Nicky Almera&lt;/td&gt;
+            &lt;td&gt;September 14, 2013&lt;/td&gt;
+            &lt;td&gt;nicky@hotmail.com&lt;/td&gt;
+            &lt;td&gt;No&lt;/td&gt;
+          &lt;/tr&gt;
+          ...
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+</pre><div></div><div class="table-overflow"><table class="table bordered"><thead><tr><th>Name</th><th>Registration Date</th><th>E-mail address</th><th>Premium Plan</th></tr></thead><tbody><tr><td>Nicky Almera</td><td>September 14, 2013</td><td>nicky@hotmail.com</td><td>No</td></tr><tr><td>Edmund Wong</td><td>January 11, 2014</td><td>edmund@yahoo.com</td><td>Yes</td></tr><tr><td>Harvinder Singh</td><td>May 11, 2014</td><td>harvinder@gmail.com</td><td>Yes</td></tr></tbody></table></div><pre class="prettyprint"><pre><code class="highlight-html">  &lt;div class=&quot;example&quot;&gt;
+    &lt;div class=&quot;table-overflow&quot;&gt;
+      &lt;table class=&quot;table bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            ...
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Nicky Almera&lt;/td&gt;
+            ...
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+</pre><div></div><div class="table-overflow"><table class="table bordered rounded"><thead><tr><th>Name</th><th>Registration Date</th><th>E-mail address</th><th>Premium Plan</th></tr></thead><tbody><tr><td>Nicky Almera</td><td>September 14, 2013</td><td>nicky@hotmail.com</td><td>No</td></tr><tr><td>Edmund Wong</td><td>January 11, 2014</td><td>edmund@yahoo.com</td><td>Yes</td></tr><tr><td>Harvinder Singh</td><td>May 11, 2014</td><td>harvinder@gmail.com</td><td>Yes</td></tr></tbody></table></div><pre class="prettyprint"><pre><code class="highlight-html">  &lt;div&gt;
+    &lt;div class=&quot;table-overflow&quot;&gt;
+      &lt;table class=&quot;table bordered rounded&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            ...
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Nicky Almera&lt;/td&gt;
+            ...
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+</pre><div></div><div class="table-overflow"><table class="table bordered rounded striped hover"><thead><tr><th>Name</th><th>Registration Date</th><th>E-mail address</th><th>Premium Plan</th></tr></thead><tbody><tr><td>Nicky Almera</td><td>September 14, 2013</td><td>nicky@hotmail.com</td><td>No</td></tr><tr><td>Edmund Wong</td><td>January 11, 2014</td><td>edmund@yahoo.com</td><td>Yes</td></tr><tr><td>Harvinder Singh</td><td>May 11, 2014</td><td>harvinder@gmail.com</td><td>Yes</td></tr><tr><td>Terry Khoo</td><td>June 6, 2013</td><td>terry@gmail.com</td><td>No</td></tr><tr><td>Jamie Harington</td><td>January 15, 2014</td><td>jharingonton@yahoo.com</td><td>Yes</td></tr><tr><td>Jill Lewis</td><td>May 1, 2014</td><td>jilsewris22@yahoo.com</td><td>Yes</td></tr></tbody></table></div><pre class="prettyprint"><pre><code class="highlight-html">  &lt;div&gt;
+    &lt;div class=&quot;table-overflow&quot;&gt;
+      &lt;table class=&quot;table bordered rounded hover striped&quot;&gt;
+        &lt;thead&gt;
+          ...
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          ...
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+</pre></div><div class="container boxes" id="boxes"><div class="example">
+<div class="row">
+<div class="col-6">
+<p>Single Box</p>
+<div class="box">box</div>
+</div>
+</div>
+</div>
+<div class="example">
+<div class="row">
+<div class="col-12">
+<p>Basic Box List</p>
+<div class="boxes default">
+<div class="box">box</div>
+<div class="box">box</div>
+<div class="box">box</div>
+</div>
+</div>
+<div class="col-12">
+<p>Basic Boxes without Background</p>
+<div class="boxes default transparent">
+<div class="box">box</div>
+<div class="box">box</div>
+<div class="box">box</div>
+</div>
+</div>
+</div>
+</div>
+<div class="example">
+<div class="row">
+<div class="col-12">
+<p>Color Primary</p>
+<div class="boxes primary">
+<div class="box">box</div>
+<div class="box">box</div>
+<div class="box">box</div>
+</div>
+</div>
+<div class="col-12">
+<p>Color Info</p>
+<div class="boxes info">
+<div class="box">box</div>
+<div class="box">box</div>
+<div class="box">box</div>
+</div>
+</div>
+<div class="col-12">
+<p>Color Success</p>
+<div class="boxes success">
+<div class="box">box</div>
+<div class="box">box</div>
+<div class="box">box</div>
+</div>
+</div>
+<div class="col-12">
+<p>Color Danger</p>
+<div class="boxes danger">
+<div class="box">box</div>
+<div class="box">box</div>
+<div class="box">box</div>
+</div>
+</div>
+<div class="col-12">
+<p>Color Warning</p>
+<div class="boxes warning">
+<div class="box">box</div>
+<div class="box">box</div>
+<div class="box">box</div>
+</div>
+</div>
+<div class="col-12">
+<p>Color Inverted</p>
+<div class="boxes inverted">
+<div class="box">box</div>
+<div class="box">box</div>
+<div class="box">box</div>
+</div>
+</div>
+</div>
+</div></div></div><div class="footer"></div></body></html>

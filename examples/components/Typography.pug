@@ -1,0 +1,34 @@
+.container.typography#typography
+
+  div
+  h1
+    | h1 Example Heading 
+    small subtitle
+  h2
+    | h2 Example Heading 
+    small subtitle
+  h3
+    | h3 Example Heading 
+    small subtitle
+  h4
+    | h4 Example Heading 
+    small subtitle
+  h5
+    | h5 Example Heading 
+    small subtitle
+  h6
+    | h6 Example Heading 
+    small subtitle
+
+  pre.prettyprint
+    :markdown-it(linkify langPrefix='highlight-')
+      ```html
+      <div>
+        <h1>h1 Example Heading <small>subtitle</small></h1>
+        <h2>h2 Example Heading <small>subtitle</small></h2>
+        <h3>h3 Example Heading <small>subtitle</small></h3>
+        <h4>h4 Example Heading <small>subtitle</small></h4>
+        <h5>h5 Example Heading <small>subtitle</small></h5>
+        <h6>h6 Example Heading <small>subtitle</small></h6>
+      </div>
+      ```

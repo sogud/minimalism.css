@@ -1,0 +1,127 @@
+.box {
+  padding: 10px 15px
+  margin-bottom: 15px
+  border: 1px solid $box-border-color
+  border-radius: 4px
+  background-color: $box-bg-color
+}
+
+// boxes/box group
+.boxes {
+  border: $boxes-border-width solid transparent
+  border-radius: $boxes-border-radius
+  margin-bottom: 15px
+
+  > .box {
+    border-width: 0
+    border-radius: 0
+    margin-bottom: 0
+
+    &:first-child {
+      border-top-left-radius: $boxes-box-border-radius !important
+      border-top-right-radius: $boxes-box-border-radius !important
+    }
+
+    &:last-child {
+      border-bottom-left-radius: $boxes-box-border-radius !important
+      border-bottom-right-radius: $boxes-box-border-radius !important
+    }
+
+    &.box-header {
+      background-color: $box-heading-bg-color
+    }
+
+    &.box-body {
+      padding-top: 15px
+      padding-bottom: 15px
+    }
+
+    &.box-footer {
+      background-color: $box-footer-bg-color
+    }
+  }
+
+  .box + .box {
+    border-top-width: 1px
+  }
+
+  .boxes {
+    // eliminate nested boxes margin-bottom
+    margin-bottom: 0
+  }
+
+  // boxes color option
+  &.default {
+    border-color: $box-border-color
+  }
+
+  &.primary {
+    border-color: $color-primary
+  }
+
+  &.info {
+    border-color: $color-info
+  }
+
+  &.success {
+    border-color: $color-success
+  }
+
+  &.danger {
+    border-color: $color-danger
+  }
+
+  &.warning {
+    border-color: $color-warning
+  }
+
+  &.inverted {
+    border-color: $color-inverted
+  }
+
+  &.transparent {
+    background-color: transparent
+
+    .box {
+      background-color: transparent
+    }
+  }
+
+  &.raised {
+    box-shadow: 0 3px 30px 3px $boxes-rasied-shadow
+
+    .box {
+      border-color: lighten($box-border-color, 10%)
+    }
+  }
+}
+
+// another boxes style
+.boxes.secondary {
+  // boxes with no border, you can custom you like
+  border-width: 0
+
+  > .box {
+    border-width: 1px
+    border-radius: 4px
+
+    &.box-header {
+      background-color: transparent
+      margin-bottom: 0
+      border-width: 0
+      border-radius: 0 !important
+    }
+
+    &.box-body {
+      padding-top: 15px
+      padding-bottom: 15px
+      margin-bottom: 0
+    }
+
+    &.box-footer {
+      background-color: transparent
+      border-width: 0
+      border-radius: 0 !important
+    }
+  }
+}

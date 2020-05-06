@@ -1,14 +1,5 @@
 - let arr
-.container.grids
-  .row
-    .grid_block.col-24
-  pre.prettyprint
-    :markdown-it(linkify langPrefix='highlight-')
-      ```html
-      <div class="row">
-        <div class="col-24"></div>
-      </div>
-      ```
+.container.grids#grid
   - arr = new Array(2)
   .row
     each val in arr
@@ -36,33 +27,21 @@
         <div class="col-8"></div>
       </div>
       ```
-
-  - arr = new Array(4)
-  .row
-    each val in arr
-      .grid_block.col-6
-
-  - arr = new Array(6)
-  .row
-    each val in arr
-      .grid_block.col-4
-
   - arr = new Array(8)
   .row
     each val in arr
       .grid_block.col-3
-
-  - arr = new Array(12)
-  .row
-    each val in arr
-      .grid_block.col-2
-
-  - arr = new Array(24)
-  .row
-    each val in arr
-      .grid_block.col-1
-
-  - arr = new Array(6)
-  .row
-    each val in arr
-      .grid_block.col-md-4.col-sm-8.col-12
+  pre.prettyprint
+    :markdown-it(linkify langPrefix='highlight-')
+      ```html
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+      </div>
+      ```

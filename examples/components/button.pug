@@ -1,5 +1,5 @@
 -var states = ['default', 'primary', 'info', 'success', 'danger','warning','inverted']
-.container.buttons
+.container.buttons#buttons
   .row
     each val in states
       button.btn(class=val) button 
@@ -42,6 +42,23 @@
     :markdown-it(linkify langPrefix='highlight-')
       ```html
       <div class="row">
+        <button class="btn pill default">button </button>
+        <button class="btn pill primary">button </button>
+        <button class="btn pill info">button </button>
+        <button class="btn pill success">button </button>
+        <button class="btn pill danger">button </button>
+        <button class="btn pill warning">button </button>
+        <button class="btn pill inverted">button </button>
+      </div>
+      ```
+  .row
+    .btns.vertical
+      each val in states
+        button.btn.pill(class=val) button 
+  pre.prettyprint
+    :markdown-it(linkify langPrefix='highlight-')
+      ```html
+      <div class="btns vertical">
         <button class="btn pill default">button </button>
         <button class="btn pill primary">button </button>
         <button class="btn pill info">button </button>

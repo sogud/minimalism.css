@@ -1,3 +1,9 @@
+/*
+ * Derived from einaros's Sons of Obsidian theme at
+ * http://studiostyl.es/schemes/son-of-obsidian by
+ * Alex Ford of CodeTunnel:
+ * http://CodeTunnel.com/blog/post/71/google-code-prettify-obsidian-theme
+ */
 .str {
   color: #ec7600;
 }
@@ -104,53 +110,4 @@ li.L9 {
   .atv {
     color: #060;
   }
-}
-body .header,
-body .footer {
-  color: #673ab7;
-  text-align: center;
-}
-body .header {
-  width: 100%;
-  height: 130px;
-  background: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 0 10px #ddd;
-  padding: 1px;
-}
-body .footer {
-  height: 100px;
-  width: 100%;
-}
-body .content {
-  margin: 0 auto;
-  width: 900px;
-  height: 100%;
-}
-body .content .container:target {
-  top: 100px;
-}
-body .content .container {
-  margin-top: 50px;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px #c9c9c9;
-}
-body .content .container .row {
-  margin: 12px;
-  overflow: hidden;
-}
-body .content .container .row .grid_block {
-  height: 36px;
-}
-body .content .container .row .grid_block:nth-child(even) {
-  background: #d3dce6;
-}
-body .content .container .row .grid_block:nth-child(odd) {
-  background: #e0e7ee;
-}
-body .content .buttons .btn {
-  margin-left: 10px;
 }
