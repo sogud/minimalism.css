@@ -1,7 +1,7 @@
 - let arr
-.grids
+.container.grids
   .row
-    .col-24
+    .grid_block.col-24
   pre.prettyprint
     :markdown-it(linkify langPrefix='highlight-')
       ```html
@@ -12,7 +12,7 @@
   - arr = new Array(2)
   .row
     each val in arr
-      .col-12
+      .grid_block.col-12
 
   pre.prettyprint
     :markdown-it(linkify langPrefix='highlight-')
@@ -26,7 +26,7 @@
   - arr = new Array(3)
   .row
     each val in arr
-      .col-8
+      .grid_block.col-8
   pre.prettyprint
     :markdown-it(linkify langPrefix='highlight-')
       ```html
@@ -40,29 +40,29 @@
   - arr = new Array(4)
   .row
     each val in arr
-      .col-6
+      .grid_block.col-6
 
   - arr = new Array(6)
   .row
     each val in arr
-      .col-4
+      .grid_block.col-4
 
   - arr = new Array(8)
   .row
     each val in arr
-      .col-3
+      .grid_block.col-3
 
   - arr = new Array(12)
   .row
     each val in arr
-      .col-2
+      .grid_block.col-2
 
   - arr = new Array(24)
   .row
     each val in arr
-      .col-1
+      .grid_block.col-1
 
   - arr = new Array(6)
   .row
     each val in arr
-      .col-md-4.col-sm-8.col-12
+      .grid_block.col-md-4.col-sm-8.col-12
