@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "commitlint-config-cz": "^0.12.1",
     "cz-customizable": "^6.2.0",
     "standard-version": "^7.0.1"
